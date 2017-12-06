@@ -20,7 +20,7 @@ describe HttpAcceptLanguage::AutoLocale do
       end
 
       def http_accept_language
-        @http_accept_language ||= HttpAcceptLanguage::Parser.new(@header)
+        HttpAcceptLanguage::Parser.new(@header)
       end
 
       include HttpAcceptLanguage::AutoLocale
